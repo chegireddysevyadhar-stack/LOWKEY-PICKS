@@ -383,14 +383,17 @@ document.getElementById("infoPanel").style.display = "block";
 }
 
 
-// 1. This is your existing code for the keyboard
+// This function hides the overlay
+function hideOverlay() {
+  var overlay = document.getElementById("overlay");
+  if (overlay) {
+    overlay.style.display = "none";
+  }
+}
+
+// This makes the keyboard ENTER key work too
 document.addEventListener("keydown", function(e) {
   if (e.key === "Enter") {
-    document.getElementById("overlay").style.display = "none";
+    hideOverlay();
   }
-});
-
-// 2. Add THIS for the button click
-document.getElementById("myEnterButton").addEventListener("click", function() {
-  document.getElementById("overlay").style.display = "none";
 });
