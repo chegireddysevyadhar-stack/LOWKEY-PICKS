@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>LOWKEY PICKS</title>
+   <link rel="stylesheet" href="style.css">
+
+   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/png" href="favicon.png">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== OVERLAY ===== -->
+<div id="overlay">
+  <div class="overlay-content">
+    <pre>
+<img src="FIGURE-OUT-NOW-1-15-2026.gif" height="250px" width="700px">
+    </pre>
+    <h4><i>Press ENTER to continue</i></h4>
+  </div>
+</div>
+
+<!-- ===== MAIN PANEL ===== -->
+<div class="info-panel" id="infoPanel">
+
+<div class="section">
+<div class="can">
+
+<div class="box" onclick="showcourse('CSE')"><img src="cse.svg"><p>CSE</p></div>
+<div class="box" onclick="showcourse('IT')"><img src="it.svg"><p>IT</p></div>
+<div class="box" onclick="showcourse('ECE')"><img src="ece.svg"><p>ECE</p></div>
+<div class="box" onclick="showcourse('EEE')"><img src="eee.svg"><p>EEE</p></div>
+<div class="box" onclick="showcourse('MECHANICAL')"><img src="mechanical.svg"><p>MECHANICAL</p></div>
+<div class="box" onclick="showcourse('CIVIL')"><img src="civil.svg"><p>CIVIL</p></div>
+<div class="box" onclick="showcourse('AI_DS')"><img src="ai ds.svg"><p>AI & DS</p></div>
+<div class="box" onclick="showcourse('ROBOTICS')"><img src="robo.svg"><p>ROBOTICS</p></div>
+
+</div>
+</div>
+
+</div>
+
+<!-- ===== UNIVERSAL PORTAL ===== -->
+<div id="course-portal">
+
+  <div class="back-btn" onclick="closePortal()">← Back</div>
+
+  <div id="course-title"></div>
+
+  <div class="course-content">
+
+    <div class="course-card">
+      <h3>WHY CHOOSE THIS?</h3>
+      <p id="why"></p>
+    </div>
+
+    <div class="course-card">
+      <h3>PROS</h3>
+      <ul id="pros"></ul>
+    </div>
+
+    <div class="course-card">
+      <h3>CONS</h3>
+      <ul id="cons"></ul>
+    </div>
+
+    <div class="course-card">
+      <h3>CAREER OPTIONS</h3>
+      <p id="careers"></p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
