@@ -384,12 +384,7 @@ document.getElementById("infoPanel").style.display = "block";
 
 
 // This function hides the overlay
-function hideOverlay() {
-  var overlay = document.getElementById("overlay");
-  if (overlay) {
-    overlay.style.display = "none";
-  }
-}
+
 
 // This makes the keyboard ENTER key work too
 document.addEventListener("keydown", function(e) {
