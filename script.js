@@ -391,6 +391,6 @@ document.addEventListener("keydown", function(e) {
 });
 
 // 2. Add THIS for the button click
-document.getElementById("enter-button").addEventListener("click", function() {
+document.getElementById("myEnterButton").addEventListener("click", function() {
   document.getElementById("overlay").style.display = "none";
 });
