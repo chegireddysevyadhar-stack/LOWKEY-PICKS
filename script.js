@@ -383,9 +383,14 @@ document.getElementById("infoPanel").style.display = "block";
 }
 
 
-// ENTER KEY OVERLAY REMOVE
+// 1. This is your existing code for the keyboard
 document.addEventListener("keydown", function(e) {
-if (e.key === "Enter") {
-document.getElementById("overlay").style.display = "none";
-}
+  if (e.key === "Enter") {
+    document.getElementById("overlay").style.display = "none";
+  }
+});
+
+// 2. Add THIS for the button click
+document.getElementById("enter-button").addEventListener("click", function() {
+  document.getElementById("overlay").style.display = "none";
 });
