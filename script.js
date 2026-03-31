@@ -383,9 +383,9 @@ document.getElementById("infoPanel").style.display = "block";
 }
 
 
-
+// This makes the keyboard ENTER key work too
 document.addEventListener("keydown", function(e) {
   if (e.key === "Enter") {
-    document.getElementById("overlay").style.display = "none";
+    hideOverlay();
   }
 });
