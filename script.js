@@ -383,14 +383,15 @@ document.getElementById("infoPanel").style.display = "block";
 }
 
 
-// This function hides the overlay
+// Keep your existing Enter key logic for desktop users
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    hideOverlay();
+  }
+});
 
-
-// 1. Find the overlay element by its ID
-const overlay = document.getElementById("overlay");
-
-// 2. Add a click listener so it works on mobile taps and mouse clicks
-overlay.addEventListener("click", function() {
-    // This calls the same function your "Enter" key uses
-    hideOverlay(); 
+// Add this for mobile (and desktop mouse clicks)
+const continueBtn = document.querySelector("overlay"); 
+continueBtn.addEventListener("click", function() {
+  hideOverlay();
 });
