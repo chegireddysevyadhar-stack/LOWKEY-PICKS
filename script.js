@@ -383,15 +383,9 @@ document.getElementById("infoPanel").style.display = "block";
 }
 
 
-// Keep your existing Enter key logic for desktop users
+
 document.addEventListener("keydown", function(e) {
   if (e.key === "Enter") {
-    hideOverlay();
+    document.getElementById("overlay").style.display = "none";
   }
-});
-
-// Add this for mobile (and desktop mouse clicks)
-const continueBtn = document.querySelector("overlay"); 
-continueBtn.addEventListener("click", function() {
-  hideOverlay();
 });
