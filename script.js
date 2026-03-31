@@ -386,9 +386,11 @@ document.getElementById("infoPanel").style.display = "block";
 // This function hides the overlay
 
 
-// This makes the keyboard ENTER key work too
-document.addEventListener("keydown", function(e) {
-  if (e.key === "Enter") {
-    hideOverlay();
-  }
+// 1. Find the overlay element by its ID
+const overlay = document.getElementById("overlay");
+
+// 2. Add a click listener so it works on mobile taps and mouse clicks
+overlay.addEventListener("click", function() {
+    // This calls the same function your "Enter" key uses
+    hideOverlay(); 
 });
