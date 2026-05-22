@@ -112,7 +112,7 @@ body::before{
 
     transform-style: preserve-3d;
     will-change: transform;
-    animation: float 4s ease-in-out infinite;
+    /* float animation removed — conflicts with JS 3D tilt */
 
     box-shadow:
   0 10px 20px rgba(0,0,0,0.6),
@@ -420,7 +420,7 @@ body::before{
   flex-direction: column;
   justify-content: flex-start;
 box-shadow: inset 0 0 100px rgba(0, 255, 150, 0.1);
-  z-index: 9998;              /* below overlay */
+  z-index: 10000;             /* above overlay */
   overflow-y: auto;
 }
 
